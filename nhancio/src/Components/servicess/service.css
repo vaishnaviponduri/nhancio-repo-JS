@@ -19,8 +19,10 @@
   
   /* Service Container Grid */
   .service-container {
-    display: grid;
-    /* grid-template-columns: 1fr; */
+    /* display: grid; */
+    display: flex;
+    /* background-color: red; */
+    grid-template-columns: 1fr;
     gap: 20px;
     padding-bottom: 5rem;
   }
