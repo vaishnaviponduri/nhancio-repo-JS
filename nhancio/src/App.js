@@ -6,18 +6,25 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import Service from './Components/servicess/services';
+import HomePage from './Components/HomePage/HomePage';
+import Footer from './Components/Footer/Footer';
+
 
 function App() {
   return (
     <div>
        <Router>
-       <Navbar />
+        
+       <Navbar/>
+
+        <HomePage/>
         <Routes>
         <Route exact path="/" ></Route>
       
       </Routes>
-
-
+        <Service/>
+      <Footer/>
        </Router>
     </div>
   )

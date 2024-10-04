@@ -1,0 +1,130 @@
+
+/* Services Section */
+.services {
+    padding-top: 90px;
+    background-color: #000000f0;
+  }
+  
+  .services .container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+  
+  /* Service Container Grid */
+  .service-container {
+    /* display: grid; */
+    display: flex;
+    /* background-color: red; */
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-bottom: 5rem;
+  }
+  
+  /* Service Box Styling */
+  .service-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .service-box img {
+    max-width: 80px;
+    margin-bottom: 20px;
+  }
+  
+  /* Text Content in Service Box */
+  .text-content {
+    flex: 1;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: white;
+  }
+  
+  p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ccc;
+  }
+  
+  /* Tags Styling */
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    gap: 10px;
+  }
+  
+  .tags span {
+    background-color: #444;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #fff;
+  }
+  @media (min-width: 768px) {
+    .service-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 1024px) {
+  .service-box {
+    padding: 3rem;
+  }
+
+  .service-box img {
+    max-width: 120px;
+  }
+}
+@media (max-width: 768px) {
+  .services-section {
+    padding-top: 5rem;
+    margin-top: 2.5rem;
+  }
+  .section-title {
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .services-button {
+    width: 100%;
+    display: inline-block;
+  }
+}
+@media (min-width: 600px) {
+  .service-box {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .service-box img {
+    max-width: 100px;
+    margin-bottom: 0;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 480px) {
+ /* Services Section */
+ .services-section {
+  padding-top: 5rem;
+}
+.section-title {
+  width: 100%;
+  font-size: 1.2rem;
+}
+}
