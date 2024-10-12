@@ -1,3 +1,72 @@
-*{
-    margin: 0;
-}
+/* Navbar.css */
+.navbar-brand {
+    margin-right: 5px; /* Reducing space between logo and navbar items */
+  }
+  
+  .navbar-nav .nav-link {
+    margin-left: 10px; /* Slight margin to space the navbar items evenly */
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  
+  .collapse {
+    padding-left: 0; /* Remove any extra padding that might add space */
+  }
+  
+  .navbar-nav .btn {
+    margin-left: 10px;
+  }
+
+    .nav-link{
+    font-size: 1.1rem;
+    color: #fafafa;
+    transition: none !important;
+  }
+
+  .nav-item{
+    padding-left: 1rem;
+  }
+
+  #navbarNav{
+    margin-right: 1rem;
+  }
+
+  .gradient-text{
+    font-size: 1.5rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #00d2ff, #3a7bd5); /* Color matches the logo */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+
+  .navbar-dark .nav-link {
+    color: #fafafa;
+    transition: transform color 1s ease; 
+  }
+  
+  .navbar-light .nav-link {
+    color: #000;
+    transition: transform color 1s ease; 
+  }
+
+  .transition-navbar {
+    transition: background-color 1s ease, color 1s ease;
+  }
+
+  .navbar {
+    transition: background-color 0.7s ease; /* Smooth background transition */
+  }
+  
+  .navbar-light .nav-link:hover{
+    background-color: black;
+    color: white;
+    transition: background-color 0.7s ease, color 0.7s ease;
+    border-radius: 5%;
+  }
+
+  .navbar-dark .nav-link:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.7s ease, color 0.7s ease;
+    border-radius: 5%;
+  }
