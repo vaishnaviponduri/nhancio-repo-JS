@@ -2,18 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style-type: none;
 }
 
 body {
     font-family: 'Arial', sans-serif;
+    margin: 0;
 }
 
 /* General section styling */
 .whyChooseUsSection {
-    padding: 50px 0;
+    padding: 50px 10px;
     background-color: #f9f9f9;
     text-align: center;
+    width: 100%; /* Ensure full width */
 }
 
 .sectionTitle {
@@ -28,33 +29,46 @@ body {
     font-weight: 400;
     margin-bottom: 40px;
     color: #666;
+    max-width: 800px;
+    margin: 0 auto 40px;
 }
 
+/* Cards Layout */
 .ChooseUsCards {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+    padding: 0 10px; /* Add padding to fit within the screen */
 }
 
 .ChooseUsCards .col-3 {
     background-color: #fff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 12px;
     text-align: center;
-    transition: transform 0.3s ease;
-    margin: 15px;
-    flex: 1 1 calc(22% - 30px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+    flex-grow: 1;
+    flex-basis: calc(50% - 20px); /* Default: 2 cards per row */
 }
 
 .ChooseUsCards .col-3:hover {
     transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .ChooseUsCards img {
     max-width: 80px;
+    height: auto;
     margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.ChooseUsCards .col-3:hover img {
+    transform: scale(1.05);
 }
 
 .cardsTitle {
@@ -63,45 +77,39 @@ body {
 
 .cardsTitle h6 {
     font-size: 1.3rem;
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 15px;
-    min-height: 45px;
 }
 
 .ChooseUsCardsPara {
     font-size: 16px;
     color: #666;
-    line-height: 1.5;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
-#abc {
-    padding-top: 10px;
+/* Media Queries for Responsive Layout */
+
+/* Large screens (greater than 1200px) - 1 row with all cards */
+@media (min-width: 1200px) {
+    .ChooseUsCards .col-3 {
+        flex-basis: calc(25% - 20px); /* 4 cards per row */
+    }
 }
 
-/* Media Queries */
-
-
-/* For screens between 900px and 1200px - 4 cards per row */
+/* Medium screens (between 900px and 1200px) - 2 cards per row */
 @media (max-width: 1200px) and (min-width: 900px) {
     .ChooseUsCards .col-3 {
-        flex: 1 1 calc(23% - 30px);
-        /* Slightly wider to fit all 4 cards */
+        flex-basis: calc(50% - 20px); /* 2 cards per row */
     }
 }
 
-/* For screens between 768px and 900px - 2 cards per row */
-@media (max-width: 900px) and (min-width: 768px) {
+/* Small screens (less than 900px) - 2 cards per row */
+@media (max-width: 900px) {
     .ChooseUsCards .col-3 {
-        flex: 1 1 calc(45% - 30px);
+        flex-basis: calc(50% - 20px); /* Still 2 cards per row */
     }
-}
-
-/* For mobile screens (less than 768px) - 1 card per row */
-@media (max-width: 768px) {
-    .ChooseUsCards .col-3 {
-        flex: 1 1 100%;
-    }
-
+    
     .sectionTitle {
         font-size: 28px;
     }
@@ -116,5 +124,15 @@ body {
 
     .ChooseUsCardsPara {
         font-size: 14px;
+    }
+}
+
+/* Extra Small screens (less than 600px) - Stack all cards vertically */
+@media (max-width: 600px) {
+    .ChooseUsCards .col-3 {
+        flex-basis: 100%; /* 1 card per row on extra small screens */
+    }
+    .row{
+        margin-right: 0;
     }
 }
