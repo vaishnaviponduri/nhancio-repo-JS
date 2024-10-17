@@ -85,14 +85,14 @@
     transition: color 0.3s;
 }
 
-.submit-container {
+.contact-container .submit-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
 }
 
-button {
+.contact-container button {
     background-color: white;
     color: black;
     font-weight: 600;
@@ -106,7 +106,7 @@ button {
     box-shadow: 0 8px 20px rgba(81, 21, 195, 0.2);
 }
 
-button:hover {
+.contact-container button:hover {
     transform: translateY(-3px);
 }
 
@@ -265,7 +265,7 @@ blockquote {
         margin-left: 0;
     }
 
-    button {
+    .contact-container button {
         width: 100%;
         margin-bottom: 10px;
     }
