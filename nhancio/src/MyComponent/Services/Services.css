@@ -1,0 +1,149 @@
+.services-container {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #2d4059;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    gap: 2.5rem;
+  }
+  
+  .service-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.09);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Left side content (title, description, tags, and button) */
+  .service-content {
+    flex: 0 0 70%; /* 70% width for the text content */
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+  
+  h3 {
+    font-size: 1.75rem;
+    margin: 0.5rem 0;
+    color: #34495e;
+  }
+  
+  p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #5d6d7e;
+    line-height: 1.6;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .tag {
+    background-color: #dbe2ef9a;
+    color: #2d4059;
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+  }
+  
+  /* Learn More button styling */
+  .learn-more {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #2d4059;
+    color: #ffffff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    white-space: nowrap;
+  }
+  
+  /* Button appears on hover */
+  .service-card:hover .learn-more {
+    opacity: 1;
+    transform: translateY(0); /* Bring the button up */
+  }
+  
+  .service-card:hover .service-content {
+    transform: translateY(-10px); /* Move content up */
+  }
+  
+  /* Right side image */
+  .service-image {
+    flex: 0 0 30%; /* 30% width for the image */
+    max-width: 120px;
+    position: relative;
+    transition: transform 0.5s ease, right 0.1s ease; /* Smooth scaling and movement */
+    right: 0;
+  }
+  
+  /* Image increases in size and moves smoothly to the right */
+  .service-card:hover .service-image {
+    transform: scale(1.2); /* Increase size */
+
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 1024px) {
+    .services-grid {
+      grid-template-columns: 1fr; /* Single column layout for smaller screens */
+    }
+  
+    .service-card {
+      flex-direction: column; /* Stack content and image vertically */
+    }
+  
+    .service-content {
+      text-align: center;
+      flex: unset;
+    }
+  
+    .service-image {
+      width: 100%;
+      max-width: 90px;
+      margin-top: 1rem;
+    }
+  
+    h2 {
+      font-size: 2rem;
+    }
+  
+    h3 {
+      font-size: 1.5rem;
+    }
+  
+    p {
+      font-size: 0.95rem;
+    }
+  
+    .learn-more {
+      margin-top: 1.5rem; /* Adjust spacing for mobile view */
+    }
+  }
+  
