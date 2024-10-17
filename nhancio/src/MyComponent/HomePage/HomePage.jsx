@@ -1,10 +1,13 @@
 import React from 'react'
+import AboutUsHomePage from '../AboutUsHomePage/AboutUsHomePage'
+import ChooseUs from '../ChooseUs/ChooseUs'
 
 const HomePage = () => {
   return (
-    <div>
-      this is home page
-    </div>
+    <>
+    <ChooseUs/>
+    <AboutUsHomePage/>
+    </>
   )
 }
 
