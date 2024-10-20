@@ -1,0 +1,157 @@
+/* Container styling */
+.client-container {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+.client-container h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Layout for the grid: 1 div on the left, 2 divs on the right */
+.client-container .client-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 4rem;
+    align-items: stretch; /* Ensures top and bottom alignment */
+    height: 100%; /* Ensure both left and right sections match in height */
+}
+
+/* Left side card */
+.client-container .left-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 30px;
+    color: white;
+    justify-content: space-between; /* Space out content */
+    text-align: left;
+    height: 100%; /* Matches the height of the right container */
+}
+
+.left-card h2 {
+    color: white;
+}
+
+.left-card p {
+    color: white;
+}
+
+/* Right side container for stacked divs */
+.client-container .right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Evenly space the top and bottom divs */
+    gap: 10px;
+    height: 100%; /* Match the height of the left div */
+}
+
+/* Common styles for right side cards */
+.client-container .right-card {
+    padding: 20px;
+    border-radius: 30px;
+    text-align: left;
+    flex: 1; /* Allow each card to take up equal space */
+}
+
+/* Background colors */
+.client-container .purple-gradient {
+    background: radial-gradient(
+      153.73% 141.42% at 0 0,
+      #9935e8 0,
+      #e85535 100%
+    );
+}
+
+.client-container .light-blue {
+    background: #b9e8f7;
+    color: #000;
+}
+
+.client-container .light-purple {
+    background: #d1b9f7;
+    color: #000;
+}
+
+/* Font sizes */
+.left-card h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.right-card h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.client-container p {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.author-info-para {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1rem;
+}
+
+.author-info-para p {
+    margin-bottom: 0;
+}
+
+/* Author info for the left card */
+.client-container .author-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.client-container .author-image {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* Slick slider styles */
+.slick-prev,
+.slick-next {
+    color: #000; /* Change arrow color */
+    font-size: 24px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-family: slick;
+    color: #000; /* Adjust the color for the arrow icons */
+    font-size: 30px;
+}
+
+.slick-dots {
+    bottom: -30px; /* Move the dots below */
+}
+
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #000; /* Change dot color */
+}
+
+.slick-dots li.slick-active button:before {
+    color: #ff6a9b; /* Active dot color */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .client-container .client-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .client-container .right-container {
+        grid-template-columns: 1fr;
+    }
+}
