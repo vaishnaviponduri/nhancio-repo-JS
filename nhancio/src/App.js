@@ -13,7 +13,7 @@ const App = () => {
       <ChooseUs />
       <ContactUs />
       <Footer />
-      <Services/>
+      <Services />
     </>
   );
 };
