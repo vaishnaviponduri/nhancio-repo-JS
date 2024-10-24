@@ -16,6 +16,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+    margin-left: 10px;
     margin-top: 4rem;
     align-items: stretch; /* Ensures top and bottom alignment */
     height: 100%; /* Ensure both left and right sections match in height */

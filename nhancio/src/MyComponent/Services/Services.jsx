@@ -70,7 +70,7 @@ const Services = () => {
                   </span>
                 ))}
               </div>
-              <button className="learn-more">Learn More</button>
+              <button className="learn-more">Know More</button>
             </div>
             <img
               src={service.image}
