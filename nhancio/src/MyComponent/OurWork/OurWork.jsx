@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './OurWork.css'; // Import the external CSS file
 import Services from '../Services/Services';
-import Client from '../Clients/Clients';
+// import Client from '../Clients/Clients';
 
 const Project = () => <div className="content-box">This is the Project component.</div>;
-// const Client = () => <div className="content-box">This is the Client component.</div>;
+const Client = () => <div className="content-box">This is the Client component.</div>;
 const App = () => <div className="content-box">This is the App component.</div>;
 
 const OurWork = () => {
