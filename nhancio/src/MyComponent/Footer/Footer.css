@@ -1,4 +1,4 @@
-.footer {
+/* .footer {
   background-color: #f8f9fa;
   padding: 2rem 0;
 }
@@ -27,7 +27,29 @@
 .footer-logo {
   max-width: 100px;
   height: auto;
-}
+} */
+
+.footer { background-color: #ffffff; color: #333; padding: 40px 0; font-family: Arial, sans-serif; }
+.footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; text-align: center; }
+.footer-logo { margin-bottom: 20px; }
+.logo-img { width: 100px; height: auto; display: block; margin: 0 auto 10px; }
+.footer h2 { color: #333; margin-bottom: 15px; font-size: 16px; }
+.footer ul { list-style: none; padding-left: 0; margin: 0; }
+.footer ul li { margin-bottom: 10px; }
+.footer ul li a { color: #666; text-decoration: none; transition: color 0.3s ease; }
+.footer ul li a:hover { color: #000; }
+.footer-logo p { margin: 10px 0 0; font-size: 14px; color: #777; text-align: center; }
+.footer .quick-links { text-align: left; }
+.footer .connect { text-align: left; }
+
+/* Copyright Section */
+#copy-right {
+   background-color: #1b262cd5; 
+  color: #eff9f8; padding: 10px 0; text-align: center; font-size: 14px; width: 100%; }
+#copy-right a { text-decoration: none; color: #00aaff; }
+#copy-right a:hover { text-decoration: underline; }
+.copy-right-sec i { margin-right: 5px; }
+
 
 @media (max-width:767px) and (min-width:300px){
   .text-center{

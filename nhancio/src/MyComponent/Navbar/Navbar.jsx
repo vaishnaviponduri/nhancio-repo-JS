@@ -1,7 +1,8 @@
 import React from "react";
-import logo from "./Images/nhancio_logo.webp";
+import logo from "./Images/Nhancio.png";
 import "./Navbar.css";
 import { useState , useEffect } from "react";
+import Services from "../Services/Services";
 
 const Navbar = () => {
   const [navbarLight, setNavbarLight] = useState(false);
