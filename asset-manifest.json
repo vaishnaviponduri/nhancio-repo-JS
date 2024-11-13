@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/nhancio-repo-JS/static/css/main.137f367f.css",
+    "main.js": "/nhancio-repo-JS/static/js/main.9cb631f5.js",
+    "static/js/453.d4aa43b9.chunk.js": "/nhancio-repo-JS/static/js/453.d4aa43b9.chunk.js",
+    "static/media/back.mp4": "/nhancio-repo-JS/static/media/back.b56966848509205d2092.mp4",
+    "static/media/AI-Driven Research.png": "/nhancio-repo-JS/static/media/AI-Driven Research.789115493eb8c71deeee.png",
+    "static/media/AI optimized.png": "/nhancio-repo-JS/static/media/AI optimized.ccc771b1bb1ec2527b76.png",
+    "static/media/Nhancio.png": "/nhancio-repo-JS/static/media/Nhancio.d0f5167a1716d1e11ca1.png",
+    "static/media/slick.svg": "/nhancio-repo-JS/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/nhancio-repo-JS/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/nhancio-repo-JS/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "index.html": "/nhancio-repo-JS/index.html",
+    "static/media/slick.woff": "/nhancio-repo-JS/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/ic_quote.svg": "/nhancio-repo-JS/static/media/ic_quote.7e9a7370f8e3c71035595ccc0004fd3e.svg",
+    "main.137f367f.css.map": "/nhancio-repo-JS/static/css/main.137f367f.css.map",
+    "main.9cb631f5.js.map": "/nhancio-repo-JS/static/js/main.9cb631f5.js.map",
+    "453.d4aa43b9.chunk.js.map": "/nhancio-repo-JS/static/js/453.d4aa43b9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.137f367f.css",
+    "static/js/main.9cb631f5.js"
+  ]
+}
